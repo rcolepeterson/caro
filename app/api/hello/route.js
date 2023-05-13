@@ -1,3 +1,6 @@
-export async function GET(request) {
-  return new Response('Hello, Next.js!')
+import { NextResponse } from "next/server";
+export async function GET(req) {
+  return NextResponse.json({
+    name: `Cole ROCKS`,
+  });
 }
